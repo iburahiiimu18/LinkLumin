@@ -34,7 +34,7 @@ async def search(request: Request, title: str = Form(...)):
     params = {
         "q": title,
         "engine": "google_scholar",
-        "api_key": "9581bad088e4aac2709eea45342e8eb6b3689c625256cbc321315fef203fd793"
+        "api_key": "YOUR API KEY"
     }
 
     srch = GoogleSearch(params)
@@ -67,7 +67,7 @@ async def search(request: Request, title: str = Form(...)):
 
 # To run the application, use the following command
 # uvicorn main:app --reload
-
+#you have to enter your Apikey
 
 """
 Copyright © [2024] Ibrahim Radwan. All rights reserved.
