@@ -27,3 +27,9 @@ Explore Network: Visualize and explore citation relationships.
 Contribution
 
 Contributions are welcome! If you have any suggestions, improvements, or issues, please open an issue or submit a pull request.
+<img width="1512" alt="ui" src="https://github.com/user-attachments/assets/4f5e9552-f9ff-4244-8182-bed6d8fecf33">
+<img width="939" alt="result" src="https://github.com/user-attachments/assets/e2d726f8-26ec-4550-8669-f71950997b87">
+<img width="761" alt="graph" src="https://github.com/user-attachments/assets/d4c49d5f-52ad-48b7-90eb-aa6b9743a891">
+
+
+
