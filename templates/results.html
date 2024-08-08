@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            background: #f8f9fa;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Search Results</h1>
+        <div class="mb-3">
+            <p><strong>Research Link:</strong> <a href="{{ research_link }}" class="btn btn-link">{{ research_link }}</a></p>
+            <p><strong>Cited By Link:</strong> <a href="{{ cited_by_link }}" class="btn btn-link">{{ cited_by_link }}</a></p>
+        </div>
+        <h2>Titles:</h2>
+        <ul class="list-group">
+            {% for title in titles %}
+                <li class="list-group-item">{{ title }}</li>
+            {% endfor %}
+        </ul>
+        <h2 class="mt-4">Graph:</h2>
+        <div class="text-center">
+            <img src="{{ graph }}" alt="Graph" class="img-fluid">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Ibrahim Radwan. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
